@@ -25,6 +25,9 @@ Contributions are welcome! If you'd like to contribute to SafeVaultDB, please su
 ## License
 SafeVaultDB for python is released under the GNU GPL 3 License.
 
+## Documentation
+You can find the documentation on readthedocs.io https://safevaultdb-python.readthedocs.io/en/latest/
+
 ## Example
 ```python
 from SafeVaultDB import SafeVault
