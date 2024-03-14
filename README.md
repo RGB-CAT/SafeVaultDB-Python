@@ -1,63 +1,43 @@
-# SafeVaultDB
-
-## Description
-
-SafeVaultDB is a library for managing a secure database stored as an encrypted JSON file. It provides a simple yet robust solution for storing and retrieving data with password protection.
-
-### Features
-
-- Encrypts and decrypts JSON data using the cryptography library.
-- Password protection ensures secure access to the database.
-- Easy integration with existing Python projects.
-- Supports CRUD operations (Create, Read, Update, Delete) on JSON data.
-
-## Installation
-
-To install SafeVaultDB for python, you can use pip:
-
-```bash
-pip install safevaultdb
-```
-
-## Contributing
-Contributions are welcome! If you'd like to contribute to SafeVaultDB, please submit a pull request to the [repository](https://github.com/RGB-CAT/SafeVaultDB-Python).
-
-## License
-SafeVaultDB for python is released under the GNU GPL 3 License.
-
-## Documentation
-You can find the documentation on readthedocs.io https://safevaultdb-python.readthedocs.io/en/latest/
-
-## Example
+# Usage
 ```python
 from SafeVaultDB import SafeVault
 
-# Path to the database file
-database_path = "D:/SafeVaultDB/Database.db"
-
-# Password to access the database
-password = "MyPassword123"
-
-# Create an instance of SafeVault
-vault = SafeVault(database_path, password)
-
-# Add some data to the database
-vault.add_data('name', 'Alice')
-vault.add_data('age', 30)
-
-# Get and print data from the database
-print("Name:", vault.get_data('name'))
-print("Age:", vault.get_data('age'))
-
-# Update data in the database
-vault.update_data('age', 31)
-
-# Get and print updated data from the database
-print("Updated Age:", vault.get_data('age'))
-
-# Delete data from the database
-vault.delete_data('name')
-
-# Get remaining data from the database
-print("Remaining data:", vault._read_database())
+# Initialize SafeVault with database path and password
+vault = SafeVault(database_path="path/to/database.db", password="your_password")
 ```
+
+## Installation
+
+You can install SafeVaultDB for python using pip:
+```bash
+pip install SafeVaultDB
+```
+
+# Functions
+## Initialization
+### __init__(database_path:str, password:str)
+### Initialize SafeVault object.
+
+#### database_path (str): The path to the database file.
+#### password (str): The password used to generate the encryption key.
+## Adding Data
+### add_data(key:str, value:str)
+### Adds key-value pair to the encrypted database.
+
+#### key (str): The key to add.
+#### value (str): The value corresponding to the key.
+## Updating Data
+### update_data(key:str, value:str)
+### Updates the value corresponding to the given key in the encrypted database.
+
+#### key (str): The key to update.
+#### value (str): The new value corresponding to the key.
+## Retrieving Data
+### get_data(key:str)
+### retrieves data corresponding to the given key from the encrypted database.
+
+#### key (str): The key to retrieve data for.
+## Deleting Data
+### delete_data(key:str)
+#### Key (str): The key to delete
+### Deletes data corresponding to the given key from the encrypted database.
