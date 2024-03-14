@@ -6,7 +6,7 @@ version: 2
 
 # Set the OS, Python version and other tools you might need
 build:
-  os: windows-latest
+  os: "windows-latest"
   tools:
     python: "3.10.11"
 
