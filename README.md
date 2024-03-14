@@ -1,3 +1,9 @@
+# Contributing
+Contributions are welcome! If you'd like to contribute to SafeVaultDB, please submit a pull request to the [repository](https://github.com/RGB-CAT/SafeVaultDB-Python).
+
+# License
+SafeVaultDB for python is released under the GNU GPL 3 License.
+
 # Usage
 ```python
 from SafeVaultDB import SafeVault
