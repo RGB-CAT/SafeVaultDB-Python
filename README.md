@@ -1,3 +1,6 @@
+> [!NOTE]
+> This library is not a true database, nor is it a NoSQL database. A rework is planned for sometime in 2025 to transform it into a true database, which will be incompatible with older versions and will result in a major version bump.
+
 # Contributing
 Contributions are welcome! If you'd like to contribute to SafeVaultDB, please submit a pull request to the [repository](https://github.com/RGB-CAT/SafeVaultDB-Python).
 
